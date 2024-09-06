@@ -9,13 +9,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>PaymentSDK</AssemblyName>
-    <Version>19.73.43.0</Version>
+    <Version>19.74.44.0</Version>
     <Authors>subtain</Authors>
     <Owners></Owners>
     <Product>DiscriminatorTest.Standard</Product>
     <Copyright>Copyright ©  2019</Copyright>
-    <AssemblyVersion>19.73.43.0</AssemblyVersion>
-    <FileVersion>19.73.43.0</FileVersion>
+    <AssemblyVersion>19.74.44.0</AssemblyVersion>
+    <FileVersion>19.74.44.0</FileVersion>
     <Description>this is testing</Description>
     <LangVersion>7.3</LangVersion>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
