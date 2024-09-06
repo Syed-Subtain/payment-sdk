@@ -1,2 +1,4 @@
 sample.js
 README.md
+doc/models/*
+DiscriminatorTest.Standard/Models/Bird.cs
