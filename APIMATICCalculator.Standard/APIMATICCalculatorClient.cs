@@ -8,7 +8,6 @@ using APIMATICCalculator.Standard.Controllers;
 using APIMATICCalculator.Standard.Http.Client;
 using APIMATICCalculator.Standard.Utilities;
 using APIMatic.Core;
-using APIMatic.Core.Types;
 
 namespace APIMATICCalculator.Standard
 {
@@ -32,16 +31,20 @@ namespace APIMATICCalculator.Standard
 
         private readonly GlobalConfiguration globalConfiguration;
         private const string userAgent = "APIMATIC 3.0";
+        private readonly HttpCallback httpCallback;
         private readonly Lazy<SimpleCalculatorController> simpleCalculator;
 
         private APIMATICCalculatorClient(
             Environment environment,
+            HttpCallback httpCallback,
             IHttpClientConfiguration httpClientConfiguration)
         {
             this.Environment = environment;
+            this.httpCallback = httpCallback;
             this.HttpClientConfiguration = httpClientConfiguration;
 
             globalConfiguration = new GlobalConfiguration.Builder()
+                .ApiCallback(httpCallback)
                 .HttpConfiguration(httpClientConfiguration)
                 .ServerUrls(EnvironmentsMap[environment], Server.Calculator)
                 .UserAgent(userAgent)
@@ -68,6 +71,10 @@ namespace APIMATICCalculator.Standard
         /// </summary>
         public Environment Environment { get; }
 
+        /// <summary>
+        /// Gets http callback.
+        /// </summary>
+        public HttpCallback HttpCallback => this.httpCallback;
 
         /// <summary>
         /// Gets the URL for a particular alias in the current environment and appends
@@ -88,6 +95,7 @@ namespace APIMATICCalculator.Standard
         {
             Builder builder = new Builder()
                 .Environment(this.Environment)
+                .HttpCallback(httpCallback)
                 .HttpClientConfig(config => config.Build());
 
             return builder;
@@ -126,6 +134,7 @@ namespace APIMATICCalculator.Standard
         {
             private Environment environment = APIMATICCalculator.Standard.Environment.Production;
             private HttpClientConfiguration.Builder httpClientConfig = new HttpClientConfiguration.Builder();
+            private HttpCallback httpCallback;
 
             /// <summary>
             /// Sets Environment.
@@ -155,7 +164,17 @@ namespace APIMATICCalculator.Standard
             }
 
 
-           
+
+            /// <summary>
+            /// Sets the HttpCallback for the Builder.
+            /// </summary>
+            /// <param name="httpCallback"> http callback. </param>
+            /// <returns>Builder.</returns>
+            public Builder HttpCallback(HttpCallback httpCallback)
+            {
+                this.httpCallback = httpCallback;
+                return this;
+            }
 
             /// <summary>
             /// Creates an object of the APIMATICCalculatorClient using the values provided for the builder.
@@ -165,6 +184,7 @@ namespace APIMATICCalculator.Standard
             {
                 return new APIMATICCalculatorClient(
                     environment,
+                    httpCallback,
                     httpClientConfig.Build());
             }
         }

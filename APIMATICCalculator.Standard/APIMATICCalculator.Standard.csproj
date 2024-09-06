@@ -9,13 +9,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>test-csharp</AssemblyName>
-    <Version>3.30.36.0</Version>
+    <Version>19.64.35.0</Version>
 
     <Owners></Owners>
     <Product>APIMATICCalculator.Standard</Product>
     <Copyright>Copyright ©  2019</Copyright>
-    <AssemblyVersion>3.30.36.0</AssemblyVersion>
-    <FileVersion>3.30.36.0</FileVersion>
+    <AssemblyVersion>19.64.35.0</AssemblyVersion>
+    <FileVersion>19.64.35.0</FileVersion>
     <Description>.NET client library for the APIMATIC Calculator</Description>
     <LangVersion>7.3</LangVersion>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>

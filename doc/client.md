@@ -11,7 +11,7 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```csharp
-APIMATICCalculator.Standard.APIMATICCalculatorClient client = new APIMATICCalculator.Standard.APIMATICCalculatorClient.Builder()
+APIMATICCalculatorClient client = new APIMATICCalculatorClient.Builder()
     .Environment(APIMATICCalculator.Standard.Environment.Production)
     .Build();
 ```

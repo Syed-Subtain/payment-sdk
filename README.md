@@ -10,15 +10,15 @@ Simple calculator API hosted on APIMATIC
 If you are building with .NET CLI tools then you can also use the following command:
 
 ```bash
-dotnet add package test-csharp --version 3.30.36
+dotnet add package test-csharp --version 19.64.35
 ```
 
 You can also view the package at:
-https://www.nuget.org/packages/test-csharp/3.30.36
+https://www.nuget.org/packages/test-csharp/19.64.35
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -30,24 +30,24 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```csharp
-APIMATICCalculator.Standard.APIMATICCalculatorClient client = new APIMATICCalculator.Standard.APIMATICCalculatorClient.Builder()
+APIMATICCalculatorClient client = new APIMATICCalculatorClient.Builder()
     .Environment(APIMATICCalculator.Standard.Environment.Production)
     .Build();
 ```
 
 ## List of APIs
 
-* [Simple Calculator](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/controllers/simple-calculator.md)
+* [Simple Calculator](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/controllers/simple-calculator.md)
 
 ## Classes Documentation
 
-* [Utility Classes](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/utility-classes.md)
-* [HttpRequest](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/http-request.md)
-* [HttpResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/http-string-response.md)
-* [HttpContext](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/http-context.md)
-* [HttpClientConfiguration](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/http-client-configuration.md)
-* [HttpClientConfiguration Builder](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/http-client-configuration-builder.md)
-* [IAuthManager](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/i-auth-manager.md)
-* [ApiException](https://www.github.com/Syed-Subtain/payment-sdk/tree/3.30.36/doc/api-exception.md)
+* [Utility Classes](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/utility-classes.md)
+* [HttpRequest](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/http-request.md)
+* [HttpResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/http-string-response.md)
+* [HttpContext](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/http-context.md)
+* [HttpClientConfiguration](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/http-client-configuration.md)
+* [HttpClientConfiguration Builder](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/http-client-configuration-builder.md)
+* [IAuthManager](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/i-auth-manager.md)
+* [ApiException](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.64.35/doc/api-exception.md)
 
