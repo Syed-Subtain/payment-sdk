@@ -1,1 +1,4 @@
-**/sample.txt
+DiscriminatorTest.Standard
+doc/models
+tests/sample.txt
+DiscriminatorTest.sln
