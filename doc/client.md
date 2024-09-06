@@ -5,18 +5,18 @@ The following parameters are configurable for the API Client:
 
 | Parameter | Type | Description |
 |  --- | --- | --- |
-| `Environment` | `Environment` | The API environment. <br> **Default: `Environment.QA`** |
+| `Environment` | `Environment` | The API environment. <br> **Default: `Environment.Production`** |
 | `Timeout` | `TimeSpan` | Http client timeout.<br>*Default*: `TimeSpan.FromSeconds(100)` |
 
 The API client can be initialized as follows:
 
 ```csharp
-DiscriminatorTestClient client = new DiscriminatorTestClient.Builder()
-    .Environment(DiscriminatorTest.Standard.Environment.QA)
+APIMATICCalculatorClient client = new APIMATICCalculatorClient.Builder()
+    .Environment(APIMATICCalculator.Standard.Environment.Production)
     .Build();
 ```
 
-## Discriminator TestClient Class
+## APIMATIC CalculatorClient Class
 
 The gateway for the SDK. This class acts as a factory for the Controllers and also holds the configuration of the SDK.
 
@@ -24,7 +24,7 @@ The gateway for the SDK. This class acts as a factory for the Controllers and al
 
 | Name | Description |
 |  --- | --- |
-| PetController | Gets PetController controller. |
+| SimpleCalculatorController | Gets SimpleCalculatorController controller. |
 
 ### Properties
 
@@ -38,12 +38,12 @@ The gateway for the SDK. This class acts as a factory for the Controllers and al
 
 | Name | Description | Return Type |
 |  --- | --- | --- |
-| `GetBaseUri(Server alias = Server.Default)` | Gets the URL for a particular alias in the current environment and appends it with template parameters. | `string` |
-| `ToBuilder()` | Creates an object of the Discriminator TestClient using the values provided for the builder. | `Builder` |
+| `GetBaseUri(Server alias = Server.Calculator)` | Gets the URL for a particular alias in the current environment and appends it with template parameters. | `string` |
+| `ToBuilder()` | Creates an object of the APIMATIC CalculatorClient using the values provided for the builder. | `Builder` |
 
-## Discriminator TestClient Builder Class
+## APIMATIC CalculatorClient Builder Class
 
-Class to build instances of Discriminator TestClient.
+Class to build instances of APIMATIC CalculatorClient.
 
 ### Methods
 

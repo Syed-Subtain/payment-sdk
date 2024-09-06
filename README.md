@@ -1,60 +1,53 @@
 
-# Getting Started with Discriminator Test
+# Getting Started with APIMATIC Calculator
+
+## Introduction
+
+Simple calculator API hosted on APIMATIC
 
 ## Install the Package
 
 If you are building with .NET CLI tools then you can also use the following command:
 
 ```bash
-dotnet add package PaymentSDK --version 19.74.44
+dotnet add package test-csharp --version 19.80.01
 ```
 
 You can also view the package at:
-https://www.nuget.org/packages/PaymentSDK/19.74.44
+https://www.nuget.org/packages/test-csharp/19.80.01
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
 | Parameter | Type | Description |
 |  --- | --- | --- |
-| `Environment` | `Environment` | The API environment. <br> **Default: `Environment.QA`** |
+| `Environment` | `Environment` | The API environment. <br> **Default: `Environment.Production`** |
 | `Timeout` | `TimeSpan` | Http client timeout.<br>*Default*: `TimeSpan.FromSeconds(100)` |
 
 The API client can be initialized as follows:
 
 ```csharp
-DiscriminatorTestClient client = new DiscriminatorTestClient.Builder()
-    .Environment(DiscriminatorTest.Standard.Environment.QA)
+APIMATICCalculatorClient client = new APIMATICCalculatorClient.Builder()
+    .Environment(APIMATICCalculator.Standard.Environment.Production)
     .Build();
 ```
 
-## Environments
-
-The SDK can be configured to use a different environment for making API calls. Available environments are:
-
-### Fields
-
-| Name | Description |
-|  --- | --- |
-| production | - |
-| QA | **Default** this is for testing |
-
 ## List of APIs
 
-* [Pet](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/controllers/pet.md)
+* [Simple Calculator](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/controllers/simple-calculator.md)
 
 ## Classes Documentation
 
-* [Utility Classes](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/utility-classes.md)
-* [HttpRequest](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/http-request.md)
-* [HttpResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/http-string-response.md)
-* [HttpContext](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/http-context.md)
-* [HttpClientConfiguration](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/http-client-configuration.md)
-* [HttpClientConfiguration Builder](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/http-client-configuration-builder.md)
-* [IAuthManager](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/i-auth-manager.md)
-* [ApiException](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.74.44/doc/api-exception.md)
+* [Utility Classes](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/utility-classes.md)
+* [HttpRequest](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/http-request.md)
+* [HttpResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/http-string-response.md)
+* [HttpContext](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/http-context.md)
+* [HttpClientConfiguration](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/http-client-configuration.md)
+* [HttpClientConfiguration Builder](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/http-client-configuration-builder.md)
+* [IAuthManager](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/i-auth-manager.md)
+* [ApiException](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.80.01/doc/api-exception.md)
 
