@@ -5,12 +5,14 @@ The following parameters are configurable for the API Client:
 
 | Parameter | Type | Description |
 |  --- | --- | --- |
+| `Environment` | `Environment` | The API environment. <br> **Default: `Environment.QA`** |
 | `Timeout` | `TimeSpan` | Http client timeout.<br>*Default*: `TimeSpan.FromSeconds(100)` |
 
 The API client can be initialized as follows:
 
 ```csharp
 DiscriminatorTestClient client = new DiscriminatorTestClient.Builder()
+    .Environment(DiscriminatorTest.Standard.Environment.QA)
     .Build();
 ```
 

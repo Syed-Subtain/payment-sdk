@@ -33,17 +33,14 @@ namespace DiscriminatorTest.Standard.Models
         /// <summary>
         /// Initializes a new instance of the <see cref="PinkRobin"/> class.
         /// </summary>
-        /// <param name="name">Name.</param>
         /// <param name="birdType">birdType.</param>
         /// <param name="beak">beak.</param>
         /// <param name="countries">countries.</param>
         public PinkRobin(
-            string name,
             string birdType = "PinkRobin",
             string beak = null,
             string countries = null)
             : base(
-                name,
                 birdType)
         {
             this.Beak = beak;

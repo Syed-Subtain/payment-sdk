@@ -6,15 +6,15 @@
 If you are building with .NET CLI tools then you can also use the following command:
 
 ```bash
-dotnet add package PaymentSDK --version 19.70.40
+dotnet add package PaymentSDK --version 19.71.41
 ```
 
 You can also view the package at:
-https://www.nuget.org/packages/PaymentSDK/19.70.40
+https://www.nuget.org/packages/PaymentSDK/19.71.41
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -44,17 +44,17 @@ The SDK can be configured to use a different environment for making API calls. A
 
 ## List of APIs
 
-* [Pet](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/controllers/pet.md)
+* [Pet](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/controllers/pet.md)
 
 ## Classes Documentation
 
-* [Utility Classes](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/utility-classes.md)
-* [HttpRequest](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/http-request.md)
-* [HttpResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/http-string-response.md)
-* [HttpContext](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/http-context.md)
-* [HttpClientConfiguration](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/http-client-configuration.md)
-* [HttpClientConfiguration Builder](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/http-client-configuration-builder.md)
-* [IAuthManager](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/i-auth-manager.md)
-* [ApiException](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.70.40/doc/api-exception.md)
+* [Utility Classes](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/utility-classes.md)
+* [HttpRequest](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/http-request.md)
+* [HttpResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/http-string-response.md)
+* [HttpContext](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/http-context.md)
+* [HttpClientConfiguration](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/http-client-configuration.md)
+* [HttpClientConfiguration Builder](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/http-client-configuration-builder.md)
+* [IAuthManager](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/i-auth-manager.md)
+* [ApiException](https://www.github.com/Syed-Subtain/payment-sdk/tree/19.71.41/doc/api-exception.md)
 

@@ -56,5 +56,29 @@ namespace DiscriminatorTest.Standard.Controllers
                       .Body(_bodyParameter => _bodyParameter.Setup(body))
                       .Header(_header => _header.Setup("Content-Type", "application/json"))))
               .ExecuteAsync(cancellationToken).ConfigureAwait(false);
+
+        /// <summary>
+        /// Get Birds EndPoint.
+        /// </summary>
+        /// <param name="type">Required parameter: Example: .</param>
+        public void GetBirds(
+                Models.Bird type)
+            => CoreHelper.RunVoidTask(GetBirdsAsync(type));
+
+        /// <summary>
+        /// Get Birds EndPoint.
+        /// </summary>
+        /// <param name="type">Required parameter: Example: .</param>
+        /// <param name="cancellationToken"> cancellationToken. </param>
+        /// <returns>Returns the void response from the API call.</returns>
+        public async Task GetBirdsAsync(
+                Models.Bird type,
+                CancellationToken cancellationToken = default)
+            => await CreateApiCall<VoidType>()
+              .RequestBuilder(_requestBuilder => _requestBuilder
+                  .Setup(HttpMethod.Get, "/Pet/getbirds")
+                  .Parameters(_parameters => _parameters
+                      .Query(_query => _query.Setup("type", type))))
+              .ExecuteAsync(cancellationToken).ConfigureAwait(false);
     }
 }

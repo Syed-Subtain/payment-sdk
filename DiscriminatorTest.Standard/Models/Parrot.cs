@@ -33,17 +33,14 @@ namespace DiscriminatorTest.Standard.Models
         /// <summary>
         /// Initializes a new instance of the <see cref="Parrot"/> class.
         /// </summary>
-        /// <param name="name">Name.</param>
         /// <param name="birdType">birdType.</param>
         /// <param name="beak">beak.</param>
         /// <param name="wings">wings.</param>
         public Parrot(
-            string name,
             string birdType = "Mithu",
             string beak = null,
             string wings = null)
             : base(
-                name,
                 birdType)
         {
             this.Beak = beak;

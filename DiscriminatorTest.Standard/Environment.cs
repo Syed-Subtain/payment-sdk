@@ -18,5 +18,11 @@ namespace DiscriminatorTest.Standard
         /// </summary>
         [EnumMember(Value = "production")]
         Production,
+
+        /// <summary>
+        /// this is for testing.
+        /// </summary>
+        [EnumMember(Value = "QA")]
+        QA,
     }
 }

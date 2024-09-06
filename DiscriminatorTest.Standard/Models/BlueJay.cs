@@ -33,17 +33,14 @@ namespace DiscriminatorTest.Standard.Models
         /// <summary>
         /// Initializes a new instance of the <see cref="BlueJay"/> class.
         /// </summary>
-        /// <param name="name">Name.</param>
         /// <param name="birdType">birdType.</param>
         /// <param name="beak">beak.</param>
         /// <param name="season">season.</param>
         public BlueJay(
-            string name,
             string birdType = "BlueBirdy",
             string beak = null,
             string season = null)
             : base(
-                name,
                 birdType)
         {
             this.Beak = beak;

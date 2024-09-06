@@ -27,6 +27,12 @@ namespace DiscriminatorTest.Standard
                     { Server.Default, "http://petstore.swagger.io/v1" },
                 }
             },
+            {
+                Environment.QA, new Dictionary<Enum, string>
+                {
+                    { Server.Default, "http://petstore.swagger.io/v2" },
+                }
+            },
         };
 
         private readonly GlobalConfiguration globalConfiguration;
@@ -132,7 +138,7 @@ namespace DiscriminatorTest.Standard
         /// </summary>
         public class Builder
         {
-            private Environment environment = DiscriminatorTest.Standard.Environment.Production;
+            private Environment environment = DiscriminatorTest.Standard.Environment.QA;
             private HttpClientConfiguration.Builder httpClientConfig = new HttpClientConfiguration.Builder();
             private HttpCallback httpCallback;
 
