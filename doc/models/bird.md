@@ -10,14 +10,14 @@
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `BirdType` | `string` | Optional | - |
+| `Name` | `string` | Required | - |
 
 ## Example (as JSON)
 
 ```json
 {
-  "birdType": "PinkRobin",
-  "beak": "beak2",
-  "countries": "countries8"
+  "birdType": "Bird",
+  "Name": "Name6"
 }
 ```
 

@@ -21,6 +21,7 @@
 ```json
 {
   "birdType": "BlueBirdy",
+  "Name": "Name6",
   "beak": "beak8",
   "season": "season0"
 }

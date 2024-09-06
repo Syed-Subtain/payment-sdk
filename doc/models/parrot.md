@@ -21,6 +21,7 @@
 ```json
 {
   "birdType": "Mithu",
+  "Name": "Name6",
   "beak": "beak2",
   "wings": "wings0"
 }

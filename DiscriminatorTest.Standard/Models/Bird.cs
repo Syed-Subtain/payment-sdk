@@ -37,11 +37,14 @@ namespace DiscriminatorTest.Standard.Models
         /// <summary>
         /// Initializes a new instance of the <see cref="Bird"/> class.
         /// </summary>
+        /// <param name="name">Name.</param>
         /// <param name="birdType">birdType.</param>
         public Bird(
+            string name,
             string birdType = "Bird")
         {
             this.BirdType = birdType;
+            this.Name = name;
         }
 
         /// <summary>
@@ -49,6 +52,12 @@ namespace DiscriminatorTest.Standard.Models
         /// </summary>
         [JsonProperty("birdType", NullValueHandling = NullValueHandling.Ignore)]
         public string BirdType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Name.
+        /// </summary>
+        [JsonProperty("Name")]
+        public string Name { get; set; }
 
         /// <inheritdoc/>
         public override string ToString()
@@ -72,7 +81,8 @@ namespace DiscriminatorTest.Standard.Models
             {
                 return true;
             }
-            return obj is Bird other &&                ((this.BirdType == null && other.BirdType == null) || (this.BirdType?.Equals(other.BirdType) == true));
+            return obj is Bird other &&                ((this.BirdType == null && other.BirdType == null) || (this.BirdType?.Equals(other.BirdType) == true)) &&
+                ((this.Name == null && other.Name == null) || (this.Name?.Equals(other.Name) == true));
         }
         
         /// <summary>
@@ -82,6 +92,7 @@ namespace DiscriminatorTest.Standard.Models
         protected void ToString(List<string> toStringOutput)
         {
             toStringOutput.Add($"this.BirdType = {(this.BirdType == null ? "null" : this.BirdType)}");
+            toStringOutput.Add($"this.Name = {(this.Name == null ? "null" : this.Name)}");
         }
     }
 }
