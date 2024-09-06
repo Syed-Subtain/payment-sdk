@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscriminatorTest.Standard", "DiscriminatorTest.Standard/DiscriminatorTest.Standard.csproj", "{0f858acd-9446-40b7-bc4f-8a94f11f4873}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscriminatorTest.Standard", "DiscriminatorTest.Standard/DiscriminatorTest.Standard.csproj", "{b052ada0-e964-4da9-a598-8c99e946a3a5}"
 EndProject
 Global
     GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,10 +10,10 @@ Global
         Release|Any CPU = Release|Any CPU
     EndGlobalSection
     GlobalSection(ProjectConfigurationPlatforms) = postSolution
-        {0f858acd-9446-40b7-bc4f-8a94f11f4873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-        {0f858acd-9446-40b7-bc4f-8a94f11f4873}.Debug|Any CPU.Build.0 = Debug|Any CPU
-        {0f858acd-9446-40b7-bc4f-8a94f11f4873}.Release|Any CPU.ActiveCfg = Release|Any CPU
-        {0f858acd-9446-40b7-bc4f-8a94f11f4873}.Release|Any CPU.Build.0 = Release|Any CPU
+        {b052ada0-e964-4da9-a598-8c99e946a3a5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {b052ada0-e964-4da9-a598-8c99e946a3a5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {b052ada0-e964-4da9-a598-8c99e946a3a5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {b052ada0-e964-4da9-a598-8c99e946a3a5}.Release|Any CPU.Build.0 = Release|Any CPU
     EndGlobalSection
     GlobalSection(SolutionProperties) = preSolution
         HideSolutionNode = FALSE
